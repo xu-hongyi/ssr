@@ -1,0 +1,15 @@
+{
+  "name": "ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:xu-hongyi/ssr.git",
+  "author": "xu-hongyi <13103682353@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:start": "nodemon --watch src --exec node src/server"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
