@@ -1,0 +1,13 @@
+.btn {
+	background-color: #ff0;
+	border-radius: 2px;
+	width: 50px;
+	height: 30px;
+	border: 1px solid #0f0;
+}
+
+.bg {
+	background-image: url(../../../assets/images/timg.jpg);
+	width: 400px;
+	height: 400px;
+}
