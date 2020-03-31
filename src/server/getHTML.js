@@ -1,6 +1,6 @@
 import getScript from './getScript'
 import getLinks from './getLinks'
-export default (componentStr) => {
+export default (componentStr, req, store) => {
 	return `
 	<!DOCTYPE html>
 	<html lang="en">
@@ -12,6 +12,8 @@ export default (componentStr) => {
 	</head>
 	<body>
 		<div id="root">${componentStr}</div>
+		<script>window.getData=${JSON.stringify(store.getState())}</script>
+		<script>window.requestPath=${JSON.stringify(req.path)}</script>
 		${getScript()}
 	</body>
 	</html>

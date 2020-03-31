@@ -7,6 +7,8 @@ import AdminUser from "@/pages/Admin/User"
 import AdminSys from "@/pages/Admin/Sys"
 import AdminNotFound from "@/pages/Admin/NotFound"
 import AdminHome from "@/pages/Admin/Home"
+import { Redirect } from "react-router-dom"
+import React from "react"
 
 export default () => {
 	const routes = [
@@ -46,6 +48,12 @@ export default () => {
 					path: "/movies",
 					exact: true,
 					component: Movies
+				}, {
+					path: "/temp",
+					exact: true,
+					component: () => {
+						return <Redirect to="/movies" />
+					}
 				}, {
 					component: NotFound
 				}
